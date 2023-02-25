@@ -1,0 +1,276 @@
+/*
+* 
+* @author Jaelson Santos
+*/
+
+@font-face {
+    font-family: 'spotifyFont-bold';
+    src: url("../fonts/CircularStd-Black.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'spotifyFont-normal';
+    src: url("../fonts/CircularStd-Medium.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(../img/capa.png),
+                url(../img/ruido.png),
+                linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: spotifyFont-normal, Arial, Helvetica, sans-serif;
+}
+
+/* Formatando a barra de navegação */
+nav.nav-bar {
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 999;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1dd25c;
+}
+
+.navbar-toggler {
+    color: rgba(29, 210, 92, .3);
+    border-color: rgba(255, 255, 255, .5);;
+}
+
+.divisor {
+    width: 1px;
+    background-color: #FFFFFF;
+    margin: 12px 15px;
+}
+
+/* Capa */
+.capa {
+    text-align: center;
+}
+
+/* Estrutura de conteúdos */
+.caixa {
+    padding: 20px 0px;
+    height: 100%;
+    padding-top: 82.83px;
+}
+
+#servicos {
+    background-color: #FFFFFF;
+}
+
+#servicos p {
+    color: #000000;
+}
+
+#servicos h2, h3 {
+    color: #7c25f8;
+}
+
+#recursos h3 {
+    color: rgba(92, 243, 69, 0.8);
+}
+
+#recursos h2, p {
+    color: #FFFFFF;
+}
+
+#recursos p {
+    margin-left: 15px;
+}
+
+.albuns {
+    padding: 10px 0px;
+}
+
+.rotacionar {
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 50px;
+}
+
+footer {
+    background-color: #000000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    font-size: 0.8em;
+}
+
+footer .links-sociais {
+    list-style: none;
+}
+
+footer .links-sociais li {
+    float: right;
+    margin: 0px 10px;
+}
+
+/* Tipografia */
+.capa h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    font-family: spotifyFont-bold, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .capa h1 {
+        font-size: 2.7em;
+    }
+
+    .btn-custom {
+        margin: 15px 10px;
+        font-size: .8em;
+    }
+
+    #facil {
+        padding-top: 10px;
+    }
+
+    
+    #servicos h2 {
+        font-size: 2em;
+    }
+
+    #servicos h3 {
+        font-size: 1.5em;
+    }
+
+    .logo-img {
+        max-width: 250px;
+        padding-bottom: 20px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .capa h1 {
+        font-size: 3.5em;
+    }
+
+    .btn-custom {
+        margin: 10px 10px;
+        font-size: 1em;
+    }
+
+    #facil {
+        padding-top: 20px;
+    }
+
+    footer .links-sociais li {
+        float: left;
+    }
+
+    .logo-img {
+        max-width: 200px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .capa h1 {
+        font-size: 4.5em;
+    }
+
+    #facil {
+        padding-top: 20px;
+    }
+
+    #recursos h2 {
+        font-size: 2em;
+    }
+    
+    #recursos h3 {
+        font-size: 1.8em;
+    }
+    
+    #recursos p {
+        font-size: 0.9em;
+    }
+
+    .logo-img {
+        max-width: 142px;
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .capa h1 {
+        font-size: 5.5em;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .capa h1 {
+        font-size: 6em;
+    }
+ }
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    --webkit-border-radius: 500px;
+    --moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: backrgound 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo {
+    background-color: #7c25f8;
+}
+
+.btn-branco {
+    border: 2px solid #FFFFFF;
+}
+
+.btn-branco:hover {
+    background-color: #FFFFFF;
+}
+
+.btn-roxo:hover {
+    background-color: #6207e3;
+    color: #FFFFFF;
+}
